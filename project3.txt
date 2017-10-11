@@ -1,0 +1,4 @@
+find sandbox -type f \( -iname "*.swp" \) -delete
+find -R /home -name '*.html -exec grep "oncology" > oncology-pages
+find -R /home -name '*.html -exec grep "radiology" > radiology-pages
+diff oncology-pages radiology-pages
